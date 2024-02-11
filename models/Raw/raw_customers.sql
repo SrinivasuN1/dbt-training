@@ -4,4 +4,4 @@
     )
 }}
 select *
-from RAW_DB.GLOBALMART_SCHEMA.CUSTOMERS
+from {{ source('globalmart','customers') }}

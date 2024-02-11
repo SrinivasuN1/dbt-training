@@ -5,4 +5,4 @@
 }}
 
 Select *
-from RAW_DB.GLOBALMART_SCHEMA.ORDERS
+from {{ source('globalmart', 'orders') }}
